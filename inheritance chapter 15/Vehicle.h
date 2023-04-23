@@ -12,12 +12,12 @@ private:
 	string manufacturer;
 	int year;
 public:
-	Vehicle(string , int );
+	Vehicle(string manufacturer, int year);
 	string getmanufacturer();
-	void setbuilt(string );
+	void setbuilt(string manufacturer);
 	int getyear();
-	void setyear(int );
-	void displayInfo();
+	void setyear(int year);
+	virtual void displayInfo();
 };
 
 

@@ -1,9 +1,10 @@
 #pragma once
-#include "Vehicle.h"
+
 #include <iostream>
 #include <string>
 #ifndef CAR.h
 #define CAR.h
+#include "Vehicle.h"
 
 using namespace std; 
 
@@ -12,15 +13,9 @@ class Car : public Vehicle
 private: 
 	int doors; 
 public:
-	Car(int num) : Vehicle ()
-	{
-		doors = num;
-	}
-
-	int getdoors() const
-	{
-		return doors;
-	}
+	Car(string make, int year, int doors);
+	int getdoors();
+	void setdoors(int);
 	void displayInfo();
 };
 #endif

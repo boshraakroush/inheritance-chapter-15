@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="chapter 15 Source.cpp" />
     <ClCompile Include="Vehical.cpp" />
   </ItemGroup>
