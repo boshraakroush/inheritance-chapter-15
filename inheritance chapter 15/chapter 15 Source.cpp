@@ -18,16 +18,17 @@ int main()
 	int year; 
 
 	cout << "Vehicle: " << endl; 
-	cout << "Enter the manufacturer: " << endl;
+	cout << "Enter the manufacturer: " ;
 	getline(cin, maker);
-	cout << "Enter the year: " << endl;
+	cout << "Enter the year: ";
 	cin >> year;
 	cin.ignore();
 	Vehicle vehicle(maker, year);
 
 	vehicle.displayInfo();
-	int doors; 
+	cout << endl;
 
+	int doors; 
 	cout << "Car: " << endl; 
 	cout << "Enter the Manufacturer: "; 
 	getline(cin, maker);
@@ -38,17 +39,18 @@ int main()
 	cin.ignore();
 	Car car(maker, year, doors);
 	car.displayInfo();
+	cout << endl; 
 
 	int towing; 
 	cout << "Truck: " << endl;
 	cout << "Enter the manufacturer: " ;
-	cin >> maker; 
+	getline(cin, maker); 
 	cout << "Enter the year: " ;
 	cin >> year;
-	cin.ignore();
+	
 	cout << "Number of doors: ";
 	cin >> doors;
-	cin.ignore();
+	
 	cout << "Towing Capacity: ";
 	cin >> towing; 
 	Truck truck(maker, year, towing);
