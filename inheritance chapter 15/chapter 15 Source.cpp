@@ -38,6 +38,7 @@ int main()
 	cin >> doors;
 	cin.ignore();
 	Car car(maker, year, doors);
+	cout << endl;
 	car.displayInfo();
 	cout << endl; 
 
@@ -53,7 +54,9 @@ int main()
 	
 	cout << "Towing Capacity: ";
 	cin >> towing; 
+	
 	Truck truck(maker, year, towing);
+cout << endl;
 	truck.displayInfo();
 
 
