@@ -12,22 +12,12 @@ private:
 	string manufacturer;
 	int year;
 public:
-	Vehicle(string maker, int y)
-	{
-		 manufacturer = maker;
-		year = y;
-	}
-	
-	string built() const
-	{
-		return manufacturer;
-	}
-	int y() const
-	{
-		return year;
-	}
+	Vehicle(string , int );
+	string getmanufacturer();
+	void setbuilt(string );
+	int getyear();
+	void setyear(int );
 	void displayInfo();
-	
 };
 
 

@@ -5,16 +5,14 @@
 #ifndef CAR.h
 #define CAR.h
 
- 
-
 using namespace std; 
 
-class Car 
+class Car : public Vehicle
 {
-protected: 
+private: 
 	int doors; 
 public:
-	Car(int num)
+	Car(int num) : Vehicle ()
 	{
 		doors = num;
 	}
@@ -23,5 +21,6 @@ public:
 	{
 		return doors;
 	}
+	void displayInfo();
 };
 #endif
