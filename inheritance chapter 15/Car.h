@@ -13,7 +13,7 @@ class Car : public Vehicle
 private: 
 	int doors; 
 public:
-	Car(string make, int year, int doors);
+	Car(string , int , int );
 	int getdoors();
 	void setdoors(int);
 	void displayInfo();
