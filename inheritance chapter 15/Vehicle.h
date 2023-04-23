@@ -3,8 +3,8 @@
 #include <string>
 using namespace std;
 
-#ifndef VEHICLE.h
-#define VEHICLE.h
+#ifndef VEHICLE_h
+#define VEHICLE_h
 
 class Vehicle
 {
@@ -12,6 +12,11 @@ private:
 	string manufacturer;
 	int year;
 public:
+	Vehicle()
+	{
+		manufacturer = "";
+		year = 0; 
+	}
 	Vehicle(string manufacturer, int year);
 	string getmanufacturer();
 	void setbuilt(string manufacturer);

@@ -1,8 +1,8 @@
 #include "Vehicle.h"
 Vehicle::Vehicle(string make, int y)
 {
-	manufacturer = make; 
-	year = y;
+	this->manufacturer = make;
+	this->year = y;
 }
 string Vehicle::getmanufacturer() 
 {
@@ -10,11 +10,11 @@ string Vehicle::getmanufacturer()
 }
 void Vehicle::setbuilt(string make)
 {
-	manufacturer = make;
+	this->manufacturer = make;
 }
 void Vehicle::setyear(int byear)
 {
-	year = byear;
+	this->year = byear;
 }
 int Vehicle::getyear()
 {

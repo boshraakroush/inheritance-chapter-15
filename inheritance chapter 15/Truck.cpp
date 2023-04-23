@@ -7,7 +7,7 @@ Truck::Truck(string make, int year, int towingcap) : Vehicle(make, year)
 }
 void Truck::settowing(int tow)
 {
-	towingcapacity = tow; 
+	this->towingcapacity = tow; 
 }
 int Truck::gettow()
 {

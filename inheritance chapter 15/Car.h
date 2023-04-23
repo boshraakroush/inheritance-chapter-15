@@ -2,8 +2,8 @@
 
 #include <iostream>
 #include <string>
-#ifndef CAR.h
-#define CAR.h
+#ifndef CAR_h
+#define CAR_h
 #include "Vehicle.h"
 
 using namespace std; 
@@ -16,6 +16,6 @@ public:
 	Car(string , int , int );
 	int getdoors();
 	void setdoors(int);
-	void displayInfo();
+	virtual void displayInfo();
 };
 #endif

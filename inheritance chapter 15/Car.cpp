@@ -3,7 +3,7 @@
 
 Car::Car(string make, int year, int door) : Vehicle (make,  year)
 {
-	door = doors; 
+	doors = door; 
 }
 int Car::getdoors()
 {
@@ -11,7 +11,7 @@ int Car::getdoors()
 }
 void Car::setdoors(int door)
 {
-	door = doors;
+	this->doors = door;
 }
 void Car::displayInfo()
 {
